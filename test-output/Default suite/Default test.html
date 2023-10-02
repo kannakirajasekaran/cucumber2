@@ -1,0 +1,184 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Sep 27 17:05:19 CDT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>24 seconds (24789 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successful Login with Valid Credentials", "Login Action"</td>
+<td><div><pre>java.lang.AssertionError: expected:&lt;[[ChromeDriver: chrome on windows (27fc0ac836e131b0316214fd24193404)] -&gt; link text: Dashboard]&gt; but was:&lt;Dashboard&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepDefinitions.OrangeHrmLogin.verify_the_dashboard_page(OrangeHrmLogin.java:62)
+	at ✽.verify the Dashboard page(file:///C:/Users/prabh/Desktop/java2022/tutorialninja.Cucumber.Project/src/test/resources/feature/orangehrmlogin.feature:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1042273835", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1042273835'><pre>java.lang.AssertionError: expected:&lt;[[ChromeDriver: chrome on windows (27fc0ac836e131b0316214fd24193404)] -&gt; link text: Dashboard]&gt; but was:&lt;Dashboard&gt;
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepDefinitions.OrangeHrmLogin.verify_the_dashboard_page(OrangeHrmLogin.java:62)
+	at ✽.verify the Dashboard page(file:///C:/Users/prabh/Desktop/java2022/tutorialninja.Cucumber.Project/src/test/resources/feature/orangehrmlogin.feature:9)
+</pre></div></td>
+<td>7</td>
+<td>runner.RunnerTestNg@7d9d0818</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid credentials", "User Login"</td>
+<td></td>
+<td>0</td>
+<td>runner.RunnerTestNg@7d9d0818</td></tr>
+<tr>
+<td title='runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid email address and invalid password", "User Login"</td>
+<td></td>
+<td>0</td>
+<td>runner.RunnerTestNg@7d9d0818</td></tr>
+<tr>
+<td title='runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register without providing any fields", "User Registeration Functionallity"</td>
+<td></td>
+<td>0</td>
+<td>runner.RunnerTestNg@7d9d0818</td></tr>
+<tr>
+<td title='runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with all fields", "User Registeration Functionallity"</td>
+<td></td>
+<td>0</td>
+<td>runner.RunnerTestNg@7d9d0818</td></tr>
+<tr>
+<td title='runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login without providing any credentials", "User Login"</td>
+<td></td>
+<td>0</td>
+<td>runner.RunnerTestNg@7d9d0818</td></tr>
+<tr>
+<td title='runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search without providing any product", "Search funtionality"</td>
+<td></td>
+<td>0</td>
+<td>runner.RunnerTestNg@7d9d0818</td></tr>
+<tr>
+<td title='runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with invalid email address and valid password", "User Login"</td>
+<td></td>
+<td>0</td>
+<td>runner.RunnerTestNg@7d9d0818</td></tr>
+<tr>
+<td title='runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with duplicate email address", "User Registeration Functionallity"</td>
+<td></td>
+<td>0</td>
+<td>runner.RunnerTestNg@7d9d0818</td></tr>
+<tr>
+<td title='runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search for non-exsiting product", "Search funtionality"</td>
+<td></td>
+<td>0</td>
+<td>runner.RunnerTestNg@7d9d0818</td></tr>
+<tr>
+<td title='runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with invalid credentials", "User Login"</td>
+<td></td>
+<td>0</td>
+<td>runner.RunnerTestNg@7d9d0818</td></tr>
+<tr>
+<td title='runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Login with valid credentials", "User Login"</td>
+<td></td>
+<td>0</td>
+<td>runner.RunnerTestNg@7d9d0818</td></tr>
+<tr>
+<td title='runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Search for valid product", "Search funtionality"</td>
+<td></td>
+<td>0</td>
+<td>runner.RunnerTestNg@7d9d0818</td></tr>
+<tr>
+<td title='runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Register with mandatory fields", "User Registeration Functionallity"</td>
+<td></td>
+<td>0</td>
+<td>runner.RunnerTestNg@7d9d0818</td></tr>
+<tr>
+<td title='runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successful Login with InValid Credentials", "Login Action"</td>
+<td></td>
+<td>5</td>
+<td>runner.RunnerTestNg@7d9d0818</td></tr>
+<tr>
+<td title='runner.RunnerTestNg.runScenario()'><b>runScenario</b><br>Test class: runner.RunnerTestNg<br>Test method: Runs Cucumber Scenarios<br>Parameters: "check search bar", "check google functionally"</td>
+<td></td>
+<td>8</td>
+<td>runner.RunnerTestNg@7d9d0818</td></tr>
+</table><p>
+</body>
+</html>
